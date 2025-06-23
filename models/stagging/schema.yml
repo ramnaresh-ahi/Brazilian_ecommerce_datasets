@@ -1,0 +1,79 @@
+
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staging model for customers"
+    columns:
+      - name: cust_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_orders
+    description: "Staging model for orders"
+
+    columns:
+      - name: ord_id
+        description: "Primary key for orders"
+        tests:
+          - not_null
+          - unique         
+
+  - name: stg_products
+    description: "Staging model for products"
+
+    columns:
+      - name: prod_id
+        description: "Primary key for products"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_product_category
+    description: "Staging model for product categories"
+
+    columns:
+      - name: prod_category
+        description: "Primary key for product categories"
+        tests:
+          - not_null
+          - unique
+  
+  - name: stg_sellers
+    description: "Staging model for sellers"
+
+    columns:
+      - name: seller_id
+        description: "Primary key for sellers"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_order_items
+    description: "Staging model for order items"
+
+    columns:
+      - name: ord_id
+        description: "Not null for order items "
+        tests:
+          - not_null
+
+  - name: stg_order_payments
+    description: "Staging model for order payments"
+
+    columns:
+      - name: ord_id
+        description: "Not null for order payments"
+        tests:
+          - not_null
+
+  - name: stg_order_reviews
+    description: "Staging model for order reviews"
+
+    columns:
+      - name: review_id
+        description: "Not null for order reviews"
+        tests:
+          - not_null

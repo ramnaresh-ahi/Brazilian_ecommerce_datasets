@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: fact_brazilian_ecommerce
+    description: "mart model for fact_brazilian_ecommerce"
+    columns:
+      - name: buyer_id
+        tests:
+          - relationships:
+              to: ref('int_buyers_info')
+              field: buyer_id
+
+    columns:
+      - name: seller_id
+        tests:
+          - relationships:
+              to: ref('int_sellers_info')
+              field: seller_id
+
