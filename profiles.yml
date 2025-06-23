@@ -3,13 +3,13 @@ Brazilian_ecommerce_datasets:
   outputs:
     dev:
       type: snowflake
-      account: FFMEHDX-KC04426
-      user: RINKUAAHI
-      password: Security@12345
-      role: ACCOUNTADMIN       # or another role if applicable
-      database: BRAZILIAN_ECOMMERCE
-      warehouse: TRANSFORMING
-      schema: RAW
+      account: Enter your account
+      user: Enter your username
+      password: Enter your password
+      role: Enter your role
+      database: Enter your database
+      warehouse: Enter your warehouse
+      schema: Enter your Schema
       threads: 1
       client_session_keep_alive: False
 
